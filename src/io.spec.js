@@ -49,7 +49,7 @@ describe('IO', function() {
   });
 
   describe('chain', function() {
-    it('calls the input function with the return value of the original effect', function() {
+    it('calls input function with the return value of the original effect', function() {
       const value = 21;
       const returns21 = sinon.stub().returns(value);
       const chainedFn = sinon.stub().returnsArg(0);

@@ -172,6 +172,13 @@ describe('Nothing', function() {
     });
   });
 
+  describe('get', function() {
+    it('should throw', function() {
+      const nothing = Nothing();
+      assert.throws(() => nothing.value());
+    });
+  });
+
   describe('toString', function() {
     it('returns `Nothing()`', function() {
       const expected = 'Nothing()';

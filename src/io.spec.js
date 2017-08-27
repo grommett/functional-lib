@@ -29,7 +29,7 @@ describe('IO', function() {
 
   describe('from', function() {
     it('creates an IO', function() {
-      const actual = IO.of(log).toString();
+      const actual = IO.from(log).toString();
       const expected = 'IO';
       assert.strictEqual(actual, expected);
     });

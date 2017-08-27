@@ -1,5 +1,4 @@
 const IOProto = {
-  from: effect => IO(effect),
   toString: () => 'IO'
 };
 
@@ -20,4 +19,5 @@ function IO(effect) {
 }
 
 IO.of = effect => IO(effect);
+IO.from = effect => IO(effect);
 module.exports = IO;
